@@ -1,0 +1,254 @@
+/*Подключение шрифтов*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&display=swap');
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*//*--------------------*//*--------------------*/
+body{
+    background: #000000E0;
+}
+.wrapper{
+    max-width: 100%;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+/*Оформление секции header*/
+.header{
+    padding: 20px 0 0 0 ;
+    background: linear-gradient(to right, #000000 55.6%, #57B8FF 50%);
+}
+
+.header__body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 0 209px 0;
+}
+
+.header__linksBox{
+    transform: rotate(270deg);
+    position: absolute;
+    top: 56%;
+    left: 6%;
+
+
+    
+}
+.header__linksList{
+    display: flex;
+    gap: 49px;
+}
+.headerL{
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 25px;
+    color: #80858F;
+}
+.header__list{
+    display: flex;
+    width: 715px;
+    justify-content: space-around;
+}
+.header__link{
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.header__link:hover{
+    color: #FAC422;
+    transition: 0.3s ease;
+}
+.header__buttons{
+    
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+.header__binBox{
+    position: relative;
+    
+}
+.header__binCount{
+    position: absolute;
+    height: 18px;
+    left: 96.92%;
+    right: -62.55%;
+    top: calc(50% - 18px/2 - 15px);
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+
+
+
+}
+.ContactUsBtn{
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding: 16px 32px;
+    background-color:#57B8FF ;
+    border: 1px solid #FFFFFF;    
+}
+.ContactUsBtn:hover{
+    color:#FAC422;
+    transition: 0.3s ease;
+}
+/*Оформление секции header__content*/
+.header__content{
+    display: flex;
+    padding:  0 0 250px 0;
+    gap: 4px;
+}
+.header__content__leftPart{
+
+}
+.mainTitle{
+    display: flex;
+    align-items: center;
+    gap:  px;
+}
+.mainTitle img{
+    margin: 0 8px 0 0;
+}
+.mainTitle p{
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #57B8FF;
+}
+.header__leftPart__title{
+    position: relative;
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 86px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0 0 43px 0 ;
+}
+.header__leftPart__underline{
+    position: absolute;
+    left: 16.20%;
+    right: 1.06%;
+    top: 168px;
+    border-radius: 0px;
+}
+.header__leftPart__info{
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #999999;
+    margin: 0 0 53px 0;
+}
+.header__leftpart__bntBox{
+    display: flex;
+    align-items: center;
+    gap:40px ;
+}
+.header__leftpart__bntBox a{
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    color: #FFFFFF;
+}
+.header__leftpart__bntBox a:hover{
+    color: #FAC422;
+    transition: 0.3s ease;
+}
+button#MainBtn{
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background: #57B8FF;
+    padding: 21px 34px;
+}
+button#MainBtn:hover{
+    color: #FAC422;
+    transition: 0.3s ease;
+}
+.header__content__rightPart{
+
+}
+.header__content__rightPart img{
+    position: relative;
+}
+.ImgWatermark{
+    position: absolute;
+    left: 89.79%;
+    right: 0.83%;
+    top: 760px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    width: 135px;                                                  
+}
+.ImgWaterMark__body{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 0;
+    
+}
+
